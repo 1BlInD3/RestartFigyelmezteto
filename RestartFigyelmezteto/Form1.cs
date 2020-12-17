@@ -55,11 +55,11 @@ namespace RestartFigyelmezteto
                     if (m == 0)
                     {
                         t.Stop();
-                        if (MessageBox.Show("Ha nem mentettél, akkor minden adatot el fog veszni!", "Így jártál", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
-                        {
-                            FormBorderStyle = FormBorderStyle.None;
-                            label3.Visible = false;
-                        }
+                        MessageBox.Show("Ments el midnent és nyomd meg a nagy piros OK gombot", "Figyelem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        
+                            //FormBorderStyle = FormBorderStyle.None;
+                            //label3.Visible = false;
+                        
                     }
                     else
                     m -= 1;
